@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+body {
+  font-family: Arial, Helvetica, "微軟正黑體", sans-serif;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+/* header --------------------------------------------- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-head {
+  width: 15%;
+}
+
+.header-foot {}
+
+.header-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header-nav {
+  display: none;
+  background-color: rgba(0,0,0,.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-btn {
+  border: none;
+  background-color: transparent;
+  font-size: 2rem;
+  padding: .7rem 1rem;
+  cursor: pointer;
+}
+
+.header-btn-xmark {
+  position: absolute;
+  right: .5rem;
+  top: 1rem;
+  color: #ccc;
+}
+
+.header-li {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.header-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+/* banner --------------------------------------------- */
+.banner {
+  text-align: center;
+}
+
+.banner-img {
+  max-width: 100%;
+  height: auto;
+}
