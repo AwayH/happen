@@ -1,0 +1,200 @@
+@charset "utf-8";
+
+/* banner --------------------------------------------- */
+.banner {
+  text-align: center;
+}
+
+.banner-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* service --------------------------------------------- */
+.service {
+  text-align: center;
+}
+
+.service-body {
+  margin-top: 5rem;
+  background-image: url("../images/service_bg.jpg");
+  /* background-position-y: -290px; */
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.service-title {}
+
+.service-title-primary {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.service-title-sub {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.service-desc {
+  color: #fff;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.service-link {
+  background-color: yellow;
+  width: 80px;
+  line-height: 80px;
+  display: inline-block;
+  border-radius: 50%;
+  text-transform: capitalize;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.service-link:hover {
+  background-color: rgb(213, 213, 0);
+}
+
+/* teach --------------------------------------------- */
+
+.teach {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.teach-head {
+  width: 40%;
+  padding-top: 13rem;
+}
+
+.teach-body {
+  width: 30%;
+}
+
+.teach-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.teach-title {
+  font-size: 1.5rem;
+  text-align: right;
+  line-height: 1.5;
+}
+
+.teach-desc {
+  color: #666;
+  line-height: 1.7;
+  margin-left: 10rem;
+  margin-top: 1rem;
+  text-align: justify;
+}
+
+.teach-media {
+  border-top: dashed 1px #666;
+  margin-top: 3rem;
+}
+
+.teach-ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.teach-li {
+  line-height: 7;
+}
+
+.teach-link {
+  color: #444;
+}
+
+.teach-link:hover {
+  text-decoration: none;
+}
+
+/* blog ------------------------- */
+
+.blog {
+  height: 80vh;
+  background-image: url("../images/blog.jpg");
+  background-attachment: fixed;
+  position: relative;
+}
+
+.blog-container {
+  background-color: rgba(255,255,255,.9);
+  position: absolute;
+  right: 0;
+  bottom: -3rem;
+  padding: 2rem;
+  width: 450px;
+}
+
+.blog-title {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.blog-desc {
+  color: #666;
+  line-height: 1.7;
+  margin-top: 1rem;
+  text-align: justify;
+}
+
+.blog-links {
+  margin-top: 1rem;
+}
+
+.blog-link {
+  background-color: chartreuse;
+  color: #000;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  display: inline-block;
+  border-radius: 2rem;
+}
+
+.blog-link:hover {
+  background-color: rgb(110, 221, 0);
+}
+
+@media screen and (max-width: 414px) {
+
+  .service-desc {
+    line-height: 1.5;
+  }
+
+  .service-body {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
+  .teach-body {
+    display: none;
+  }
+
+  .teach-head {
+    width: auto;
+    padding: 1rem;
+  }
+
+  .teach-desc {
+    margin-left: 0;
+  }
+
+  .blog-container  {
+    width: 300px;
+    box-sizing: border-box;
+    bottom: auto;
+    top: 5rem;
+  }
+}

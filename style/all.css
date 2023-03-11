@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, Helvetica, "微軟正黑體", sans-serif;
 }
@@ -27,8 +31,8 @@ img {
 }
 
 .header-nav {
-  display: none;
-  background-color: rgba(0,0,0,.8);
+  display: flex;
+  background-color: rgba(0, 0, 0, .8);
   position: fixed;
   top: 0;
   left: 0;
@@ -66,12 +70,91 @@ img {
   text-transform: capitalize;
 }
 
-/* banner --------------------------------------------- */
-.banner {
-  text-align: center;
+/* helper ------------------------ */
+
+.container-lg {
+  max-width: 1520px;
 }
 
-.banner-img {
-  max-width: 100%;
-  height: auto;
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* fotter ----------------------- */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ddd;
+  padding: 10rem 3rem 2rem;
+  align-items: flex-end;
+}
+
+.footer-foot {
+  position: fixed;
+  right: 3rem;
+  bottom: 4rem;
+}
+
+.footer-link {
+  color: #999;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.footer-link:hover {
+  color: #666;
+}
+
+.footer-link-top {
+  font-size: 3rem;
+}
+
+.footer-desc {
+  font-size: .9rem;
+  color: #666;
+}
+
+.footer-ul {
+  display: flex;
+}
+
+.footer-li {
+  margin-left: 4rem;
+}
+
+/* site --------------------- */
+.site {
+  width: 1rem;
+  position: fixed;
+  left: 3rem;
+  bottom: 6rem;
+  z-index: 10;
+  line-height: 1.4;
+  color: #666;
+}
+
+.site-line {
+  background-color: #444;
+  width: 1px;
+  height: 200px;
+  display: block;
+  margin-left: .45rem;
+}
+
+
+@media screen and (max-width: 414px) {
+  .footer-body, .site {
+    display: none;
+  }
+
+  .header-head {
+    width: 30%;
+    padding-left: 1rem;
+  }
+
+  .footer-foot {
+    right: 2rem;
+    bottom: 2rem;
+  }
 }
