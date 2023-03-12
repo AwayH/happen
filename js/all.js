@@ -1,10 +1,10 @@
 $('#HeaderBtnBars').click(function(){
-  $('#HeaderNav').slideDown(1000);
-  $(this).hide();
+  $('#HeaderBody').fadeIn();
+  $('body').css('overflow', 'hidden');
 })
 
 
 $('#HeaderBtnXmark').click(function(){
-  $('#HeaderNav').slideUp(1000);
-  $('#HeaderBtnBars').show();
+  $('#HeaderBody').fadeOut();
+  $('body').css('overflow', 'visible');
 });
